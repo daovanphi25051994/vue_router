@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+       Phi {{ message }}
+       <h2>{{ showMessage('dao van phi') }}</h2>
+       <a v-bind:href="url" target="_blank">Go to facebook</a>
+        <span>Giá: {{formatPrice()}}</span>
+        <span>Count: {{counter}}</span>
+        <button v-on:click="click(5)">Click me!!</button>
+        <form v-on:submit.prevent.enter="onSubmit">
+            <input type="text"><br>
+            <input type="text">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
